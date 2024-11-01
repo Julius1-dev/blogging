@@ -1,0 +1,9 @@
+{% extends 'blog/main.html' %}
+{% block content %}
+<div id="signup">
+    <form action="/" method="post">
+        {{signup_form.as_p}}
+    </form>
+    <button class="submit">Sign Up</button>
+</div>
+{% endblock content %}

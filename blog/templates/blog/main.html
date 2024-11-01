@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blogging Website</title>
+        <header>
+            <div>
+                <nav>
+                    <ul>
+                       <a href="{% url 'login' %}"> <li>Login</li></a>
+                       <a href="{% url 'logout' %}"><li>Logout</li></a>
+                       <a href="{% url 'signup' %}"><li>Sign Up</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
